@@ -3,7 +3,7 @@
 /**
  *main - 5-printf.c
  *
- *Retutn: 0
+ *Return: 0
  */
 int main(void)
 {
