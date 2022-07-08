@@ -14,4 +14,5 @@ int main(void)
 		c++;
 	}
 	putchar(10);
+	return (0);
 }
