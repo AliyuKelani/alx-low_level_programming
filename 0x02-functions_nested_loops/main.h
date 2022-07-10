@@ -15,4 +15,11 @@ int _putchar(char c);
  * Return: nothing
  */
 void print_alphabet(void);
+
+/**
+ * print_alphabet_x10 - writes lowercase letters 10 times to stdout
+ *
+ * Return: nothing
+ */
+void print_alphabet_x10(void);
 #endif
