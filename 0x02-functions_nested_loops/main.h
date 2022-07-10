@@ -38,4 +38,12 @@ int _islower(char c);
  * Return: 1 if an alphabet else 0
  */
 int _isalpha(char c);
+
+/**
+ * print_sign - prints the sign of a number
+ * @i: the character whose sign it prints
+ *
+ * Return: 1 if i is +ve -1 if -ve else 0
+ */
+int print_sign(int i);
 #endif
