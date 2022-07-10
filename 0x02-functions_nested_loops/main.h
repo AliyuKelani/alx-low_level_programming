@@ -46,4 +46,12 @@ int _isalpha(char c);
  * Return: 1 if i is +ve -1 if -ve else 0
  */
 int print_sign(int i);
+
+/**
+ * _abs - returns the absolute value of a number
+ * @i: the character whose absolute value is returned
+ *
+ * Return: absolute value of a number
+ */
+int _abs(int i);
 #endif
