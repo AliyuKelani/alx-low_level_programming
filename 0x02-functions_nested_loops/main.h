@@ -30,4 +30,12 @@ void print_alphabet_x10(void);
  * Return: 1 if lower else 0
  */
 int _islower(char c);
+
+/**
+ * _isalpha - checks if a charater is an alphabet
+ * @c: the character to check
+ *
+ * Return: 1 if an alphabet else 0
+ */
+int _isalpha(char c);
 #endif
