@@ -19,7 +19,7 @@ int main(void)
 			putchar(32);
 			putchar((j / 10) + 48);
 			putchar((j % 10) + 48);
-			if (j != 98 || i != 99)
+			if (j != 99 || i != 98)
 			{
 				putchar(44);
 				putchar(32);
