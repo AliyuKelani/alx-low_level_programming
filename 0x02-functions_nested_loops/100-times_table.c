@@ -26,6 +26,5 @@ void print_times_table(int n)
 			b++;
 		}
 		a++;
-		_putchar(10);
 	}
 }
