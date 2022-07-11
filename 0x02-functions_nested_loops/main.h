@@ -54,4 +54,51 @@ int print_sign(int i);
  * Return: absolute value of a number
  */
 int _abs(int i);
+
+/**
+ * print_last_digit - returns the last digit of a number
+ * @i: the character whose last digit is returned
+ *
+ * Return: last digit of a number
+ */
+int print_last_digit(int i);
+
+/**
+ * jack_bauer - prints every minute of the day starting from 00:00 to 23:59
+ *
+ * Return: nothing
+ */
+void jack_bauer(void);
+
+/**
+ * times_table - prints the 9 times table starting from 0
+ *
+ * Return: nothing
+ */
+void times_table(void);
+
+/**
+ * add - sums two number
+ * @a: first sum operand
+ * @b: second sum operand
+ *
+ * Return: the sum of two numbers
+ */
+int add(int a, int b);
+
+/**
+ * print_to_98 - prints to 98 startting from a number n
+ * @n: starting point inclusive
+ *
+ * Return: nothing
+ */
+void print_to_98(int n);
+
+/**
+ * print_times_table - prints tthe times table starting from 0 to n
+ * @n: stopping point inclusive
+ *
+ * Return: nothing
+ */
+void print_times_table(int n);
 #endif
