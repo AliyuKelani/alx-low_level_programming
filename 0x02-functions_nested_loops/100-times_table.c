@@ -12,7 +12,7 @@ void print_times_table(int n)
 
 	a = 0;
 	if (n == 0)
-		printf("0");
+		printf("0\n");
 	while (a <= n && n > 0 && n < 16)
 	{
 		b = 0;
