@@ -34,7 +34,7 @@ int nextprime(int n)
 	if (n < 2)
 		return (2);
 	i = n + 1;
-	if (n % 2 == 0)
+	if (i % 2 == 0)
 		i++;
 	while (isprime(i) != 1)
 		i += 2;
@@ -67,9 +67,9 @@ int main(void)
 	int div = 2;
 	long rem = 612852475143;
 
-	while (isprime(rem) != 1)
+	while (isprime(rem) != 1 && rem > 1)
 	{
-		while (isdivisible(rem, div) != 1 && rem >= div)
+		while (isdivisible(rem, div) != 1 && rem > div)
 		{
 			div = nextprime(div);
 		}
