@@ -32,7 +32,7 @@ int _isdigit(int c);
  *
  * Return: product of @a and @b
  */
-int _mul(int a, int b);
+int mul(int a, int b);
 
 /**
  * print_numbers - print numbers 0 - 9
