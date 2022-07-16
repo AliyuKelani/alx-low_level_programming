@@ -14,10 +14,10 @@ void print_triangle(int n)
 	do {
 		for (j = 0; j < n; j++)
 		{
-			if (j == (n - 1))
+			if (j <= i)
 				_putchar('#');
 			else
-				_putchar('#');
+				_putchar(' ');
 		}
 		_putchar(10);
 		i++;
