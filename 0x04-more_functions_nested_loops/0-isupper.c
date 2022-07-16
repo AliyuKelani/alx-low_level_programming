@@ -6,7 +6,7 @@
  *
  * Return: 1 for uppercase letters and 0 otherwise
  */
-int _isupper(char c)
+int _isupper(int c)
 {
 	int res;
 

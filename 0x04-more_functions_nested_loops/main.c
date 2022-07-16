@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - check the code.
@@ -7,12 +8,11 @@
  */
 int main(void)
 {
-    print_times_table(3);
-    _putchar('\n');
-    print_times_table(5);
-    _putchar('\n');
-    print_times_table(98);
-    _putchar('\n');
-    print_times_table(12);
+    char c;
+
+    c = 'A';
+    printf("%c: %d\n", c, _isupper(c));
+    c = 'a';
+    printf("%c: %d\n", c, _isupper(c));
     return (0);
 }
