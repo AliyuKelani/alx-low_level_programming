@@ -9,21 +9,51 @@
 int main(void)
 {
 	int count;
-	unsigned long long a, b, c;
+	unsigned long a, b, c, ra, rb, rc, da, db, dc, l;
+	short crossed;
 
 	count = 2;
+	l = 1000;
 	a = 1;
 	b = 2;
 	printf("%lu, %lu, ", a, b);
+	crossed = 0;
 	while (count < 98)
 	{
-		c = a + b;
-		if (count == 97)
-			printf("%lu\n", c);
+		if (crossed == 1)
+		{
+			rc = (ra + rb) % l;
+			dc = (da + db) + ((ra + rb) / l);
+			if (rc > 0)
+				printf("%lu%lu", dc, rc);
+			else
+				printf("%lu", dc);
+			ra = rb;
+			rb = rc;
+			da = db;
+			db = dc;
+		}
 		else
-			printf("%lu, ", c);
-		a = b;
-		b = c;
+		{
+			c = a + b;
+			printf("%lu", c);
+			a = b;
+			b = c;
+			if (c > l)
+			{
+				crossed = 1;
+				ra = a % l;
+				da = a / l;
+				rb = b % l;
+				db = b / l;
+			}
+		}
+
+		if (count == 97)
+			printf("\n");
+		else
+			printf(", ");
+
 		count++;
 	}
 	return (0);
