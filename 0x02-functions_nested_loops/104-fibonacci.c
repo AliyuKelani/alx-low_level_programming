@@ -1,11 +1,12 @@
 #include <stdio.h>
 
 /**
-* main - prints the first 98 Fibonacci numbers, starting with 1 and 2, followed by a new line
+* main - prints the first 98 Fibonacci numbers, starting with 1 and 2,
+*        followed by a new line
 * Return: Always 0 (Success)
 */
 
-int main (void)
+int main(void)
 {
 	int count;
 	unsigned long int a, b, c;
@@ -17,7 +18,10 @@ int main (void)
 	while (count < 98)
 	{
 		c = a + b;
-		printf("%lu, ", c);
+		if (count == 97)
+			printf("%lu\n", c);
+		else
+			printf("%lu, ", c);
 		a = b;
 		b = c;
 		count++;
