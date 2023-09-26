@@ -9,7 +9,7 @@
 int main(void)
 {
 	int count;
-	unsigned long int a, b, c;
+	unsigned long long a, b, c;
 
 	count = 2;
 	a = 1;
