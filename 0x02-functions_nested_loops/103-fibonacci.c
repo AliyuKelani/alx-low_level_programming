@@ -9,7 +9,8 @@
 int main(void)
 {
 	long int a, b, c;
-	long int sum = 0;
+	long int sum = 2;
+
 	a = 1;
 	b = 2;
 	c = a + b;
